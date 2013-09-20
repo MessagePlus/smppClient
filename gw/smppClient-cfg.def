@@ -1,0 +1,58 @@
+/* ==================================================================
+ * smppclient-cfg.def - Definicion de la configuracion de Grupos y Variables Definition of configuration groups and variables
+ *
+ * Rodrigo Vallejo desarrollo@mplus.ec
+ *
+ */
+
+SINGLE_GROUP(smppClient,
+	OCTSTR(smppClient-id)
+	OCTSTR(carrier-id)
+	OCTSTR(carrier-queue-id)
+	OCTSTR(host)
+    OCTSTR(our_host)
+    OCTSTR(port)
+	OCTSTR(receive-port)
+	OCTSTR(log-file)
+	OCTSTR(log-level)
+	OCTSTR(reconnect-delay)
+	OCTSTR(transceiver-mode)
+	OCTSTR(receiver-mode)
+	OCTSTR(transmitter-mode)
+	OCTSTR(smsc-username)
+	OCTSTR(smsc-password)
+	OCTSTR(system-type)
+	OCTSTR(address-range)
+	OCTSTR(my-number)
+	OCTSTR(service-type)
+	OCTSTR(system-id)
+	OCTSTR(enquire-link-interval)
+	OCTSTR(max-pending-submits)
+	OCTSTR(source-addr-ton)
+	OCTSTR(source-addr-npi)
+	OCTSTR(source-addr-autodetect)
+	OCTSTR(dest-addr-ton)
+	OCTSTR(dest-addr-npi)
+	OCTSTR(interface-version)
+	OCTSTR(timeout)
+	OCTSTR(connection-timeout)
+	OCTSTR(bind-addr-ton)
+	OCTSTR(bind-addr-npi)
+	
+)
+
+MULTI_GROUP(client-route,
+    OCTSTR(client-id)
+    OCTSTR(smsc-id)
+    OCTSTR(shortcode)
+) 
+
+SINGLE_GROUP(mysql-connection,
+    OCTSTR(id)
+    OCTSTR(host)
+    OCTSTR(port)
+    OCTSTR(username)
+    OCTSTR(password)
+    OCTSTR(database)
+    OCTSTR(max-connections)
+)

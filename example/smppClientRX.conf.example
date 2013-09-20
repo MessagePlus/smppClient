@@ -1,0 +1,23 @@
+group = smppClient
+smppClient-id = MovistarClientRX
+host = localhost
+our_host = localhost
+port = 9999
+smsc-username = test 
+smsc-password = test
+system-type = test
+#transmitter-mode = true
+receiver-mode = true
+log-level =0
+log-file = "/home/rxvallejoc/GWec/var/log/MovistarClientRX.log"
+
+group = mysql-connection
+id = mydlr
+host = localhost
+username = root
+password = mysql
+database = gateway
+# you can increase this upon a higher load
+max-connections = 1
+
+
